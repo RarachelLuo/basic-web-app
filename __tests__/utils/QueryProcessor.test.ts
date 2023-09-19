@@ -49,4 +49,12 @@ describe("QueryProcessor", () => {
             "76"
           ));
     });
+    
+    test('should return correct product', () => {
+        const query = "What is 35 multiplied by 42?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "1470"
+          ));
+    });
 });
