@@ -57,4 +57,8 @@ describe("QueryProcessor", () => {
             "1470"
           ));
     });
+
+    Which of the following numbers is both a square and a cube: 64, 2594, 2500, 2826, 4521, 46, 729?	
+    
+
 });
