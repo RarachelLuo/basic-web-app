@@ -33,4 +33,12 @@ describe("QueryProcessor", () => {
             "rat"
           ));
     });
+
+    test('should return correct sum', () => {
+        const query = "What is 11 plus 49?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "60"
+          ));
+    });
 });
