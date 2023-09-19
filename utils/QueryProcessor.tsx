@@ -12,5 +12,11 @@ export default function QueryProcessor(query: string): string {
       "rgluo"
     );
   }
+
+  if (query.toLowerCase().includes("name")) {
+    return (
+      "Rat"
+    );
+  }
   return "";
 }
