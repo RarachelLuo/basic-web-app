@@ -41,4 +41,12 @@ describe("QueryProcessor", () => {
             "60"
           ));
     });
+
+    test('should return correct max', () => {
+        const query = "Which of the following numbers is the largest: 18, 59, 76?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "76"
+          ));
+    });
 });
