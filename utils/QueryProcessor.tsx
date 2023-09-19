@@ -62,7 +62,7 @@ export default function QueryProcessor(query: string): string {
 
   if (query.toLowerCase().includes("minus")) {
     
-    const addMatch = query.match(/What is (\d+) multiplied by (\d+)/);
+    const addMatch = query.match(/What is (\d+) minus (\d+)/);
     
     if (addMatch) {
       const x: number = parseInt(addMatch[1]);
@@ -72,6 +72,17 @@ export default function QueryProcessor(query: string): string {
 
   }
 
+  if (query.toLowerCase().includes("power")) {
+    
+    const addMatch = query.match(/What is (\d+) to the power of (\d+)/);
+    
+    if (addMatch) {
+      const x: number = parseInt(addMatch[1]);
+      const y: number = parseInt(addMatch[2]);
+      return (xy).toString();
+    }
+
+  }
   if (query.toLowerCase().includes("largest")) {
     
     const largeMatch = query.match(/Which of the following numbers is the largest: (\d+), (\d+), (\d+)/);
